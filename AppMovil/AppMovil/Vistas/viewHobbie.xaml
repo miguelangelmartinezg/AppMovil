@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovil.Vistas.viewHobbie"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label Text="HOBBIES"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="30"
+                   Margin="0,20,0,0" />
+            <Frame  VerticalOptions="FillAndExpand"
+                    Margin="20,20,20,20"
+                    BackgroundColor="Beige">
+                <StackLayout>
+                    <Label Text="Favor Eligir Todos sus Hobbies:"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           Margin="0,20,0,0" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="25" />
+                            <ColumnDefinition Width="*" />
+                           
+                        </Grid.ColumnDefinitions>
+                        <CheckBox x:Name="Cantar"
+                                  Grid.Row="0"
+                                  Grid.Column="0" />
+                        <Label Text="Cantar"
+                               Grid.Row="0"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="Bailar"
+                                  Grid.Row="1"
+                                  Grid.Column="0" />
+                        <Label Text="Bailar"
+                               Grid.Row="1"
+                               Grid.Column="1" />                        
+                        <CheckBox x:Name="Musica"
+                                  Grid.Row="2"
+                                  Grid.Column="0" />
+                        <Label Text="Escuchar Musica"
+                               Grid.Row="2"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="Villar"
+                                  Grid.Row="3"
+                                  Grid.Column="0" />
+                        <Label Text="Jugar Villar"
+                               Grid.Row="3"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="Leer"
+                                  Grid.Row="4"
+                                  Grid.Column="0" />
+                        <Label Text="Leer"
+                               Grid.Row="4"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="Nadar"
+                                  Grid.Row="5"
+                                  Grid.Column="0" />
+                        <Label Text="Nadar"
+                               Grid.Row="5"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="Pintar"
+                                  Grid.Row="6"
+                                  Grid.Column="0" />
+                        <Label Text="Patinar"
+                               Grid.Row="6"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="TV"
+                                  Grid.Row="7"
+                                  Grid.Column="0" />
+                        <Label Text="Ver Televisión"
+                               Grid.Row="7"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="Guitarra"
+                                  Grid.Row="8"
+                                  Grid.Column="0" />
+                        <Label Text="Tocar Guitarra"
+                               Grid.Row="8"
+                               Grid.Column="1" />
+                        <CheckBox x:Name="Video"
+                                  Grid.Row="9"
+                                  Grid.Column="0" />
+                        <Label Text="Video Juegos"
+                               Grid.Row="9"
+                               Grid.Column="1" />
+                    </Grid>
+                    <Button Text="Volver"
+                            TextColor="White"
+                            TextTransform="None"
+                            BackgroundColor="Black" 
+                            x:Name="btnVolver"
+                            Clicked="btnVolver_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+   
+</ContentPage>

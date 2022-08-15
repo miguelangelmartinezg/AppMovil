@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovil.Vistas.viewComunidad"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label Text="COMUNIDADES"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="30"
+                   Margin="0,20,0,0" />
+            <Frame VerticalOptions="FillAndExpand"
+                   Margin="20,20,20,20"
+                   BackgroundColor="Beige">
+                <StackLayout>
+                    <Label Text="Favor eligir una Comunidad:"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           Margin="0,20,0,0" />
+                    <RadioButton Content="Astronautas"
+                                 FontSize="12" />
+                    <RadioButton Content="Biologos"
+                                 FontSize="12" />
+                    <RadioButton Content="Cientificos"
+                                 FontSize="12" />
+                    <RadioButton Content="Ciencias Sociales"
+                                 FontSize="12" />
+                    <RadioButton Content="Informaticos"
+                                 FontSize="12"/>
+                    <RadioButton Content="Linguistas"
+                                 FontSize="12" />
+                    <RadioButton Content="Matematicos"
+                                 FontSize="12" />
+                    <RadioButton Content="Militares"
+                                 FontSize="12" />
+                    
+                    <Button Text="Volver"
+                            TextColor="White"
+                            TextTransform="None"
+                            BackgroundColor="Black"
+                            x:Name="btnVolver"
+                            Clicked="btnVolver_Clicked" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovil.Vistas.viewMenu"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label Text="MENU" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30" Margin="0,20,0,0"/>
+            <Frame VerticalOptions="FillAndExpand" Margin="20,20,20,20" BackgroundColor="Beige">
+                <StackLayout Spacing="10">
+                   
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Hobbies.png"
+                                  Grid.Row="0"
+                                  Grid.Column="0" />
+                        <Button Text="Hobbies"
+                                TextTransform="None"
+                                BackgroundColor="BurlyWood"
+                                CornerRadius="10"
+                                HorizontalOptions="Center"
+                                x:Name="btnHobbie"
+                                Clicked="btnHobbie_Clicked"
+                                Grid.Row="1"
+                               Grid.Column="0" />
+                        <Image Source="Dev.png"
+                                Grid.Row="2"
+                                  Grid.Column="0" />
+                        <Button Text="Comunidades"
+                                TextTransform="None"
+                                BackgroundColor="BurlyWood"
+                                CornerRadius="10"
+                                HorizontalOptions="Center"
+                                x:Name="btnComunidad"
+                                Clicked="btnComunidad_Clicked"
+                                Grid.Row="3"
+                               Grid.Column="0" />
+                        <Image Source="Agenda.png"
+                                  Grid.Row="0"
+                                  Grid.Column="1" />
+                        <Button Text="Agenda"
+                                TextTransform="None"
+                                BackgroundColor="BurlyWood"
+                                CornerRadius="10"
+                                HorizontalOptions="Center"
+                                x:Name="btnAgenda"
+                                Clicked="btnAgenda_Clicked"
+                                Grid.Row="1"
+                               Grid.Column="1" />
+                        <Image Source="Deportes.png"
+                                  Grid.Row="2"
+                                  Grid.Column="1" />
+                        <Button Text="Deportes"
+                                TextTransform="None"
+                                BackgroundColor="BurlyWood"
+                                CornerRadius="10"
+                                HorizontalOptions="Center"
+                                x:Name="btnDeportes"
+                                Clicked="btnDeportes_Clicked"
+                                Grid.Row="3"
+                               Grid.Column="1" />
+                       
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
